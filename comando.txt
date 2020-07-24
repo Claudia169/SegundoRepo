@@ -1,34 +1,58 @@
 Laboratorio Git. 
 1.- Entrar a su cuenta de GitHub y crear un repositorio llamado SegundoRepo
-2.- Clonar el repositorio SegundoRepo en su computadora, en la carpeta del curso
-        git clone https:/d
-3.- Ingresar al repositorio usando cd SegundoRepo
-4.- Abrir el visual studio code. Escribir code .
-5.- Crear los siguientes archivos:  alumno1.py, alumno2.py, alumno3.py, readme.md
-        touch
-6.- Poner en seguimiento unicamente los archivo .py
+         https://github.com/Claudia169/SegundoRepo.git
 
- 
+2.- Clonar el repositorio SegundoRepo en su computadora, en la carpeta del curso
+         git clone https://github.com/Claudia169/SegundoRepo.git
+
+3.- Ingresar al repositorio usando cd SegundoRepo
+         SegundoRepo
+
+4.- Abrir el visual studio code. Escribir code .
+
+         code .
+
+5.- Crear los siguientes archivos:  alumno1.py, alumno2.py, alumno3.py, readme.md
+         touch alumno1.py alumno2.py alumno3.py readme.md
+
+6.- Poner en seguimiento unicamente los archivo .py
+         git add .py
 
 7.- Hacer un commit con el mensaje "add alumno 1,2,3"
-
- 
+         PS C:\Intersemestral 2020\SegundoRepo> git commit -m "Add alumno 1,2,3"
+         [master 83bbb1e] Add alumno 1,2,3 
+         1 file changed, 3 insertions(+)
+         create mode 100644 .gitignore
 
 9.- Poner en seguimiento el archivo readme.md
-
- 
+         git add readme.md
 
 10.-Hacer un commit con el mensaje "add readme"
-
- 
+         git commit -m "Add readme"
 
 11.-Mostrar la historia del repositorio
+         PS C:\Intersemestral 2020\SegundoRepo> git log
+         commit 83bbb1e906a50d0aa40cd2514c2762b2a41db127 (HEAD -> master)
+         Author: Claudia Moron Fernandez <claudya169@gmail.com>
+         Date:   Fri Jul 24 10:13:50 2020 -0500
 
- 
+           Add alumno 1,2,3
+
+         commit f5d7099cd69f5511748a991988541862da6de767 (origin/master)
+         Author: Claudia Moron Fernandez <claudya169@gmail.com>
+         Date:   Wed Jul 22 11:19:56 2020 -0500
 
 12.-A los archivos .py agregar a cada uno de ellos en print("hola")
 13.-Prepara los cambios de los archivos y hacer commit con el mensaje "add saludo"
+         git add *.py
+         git commit -m "add saludo"
+         
 14.-Al archivo alumno3.py, agregarle el print("saludos")
 15.-Preparar el archivo3.py para hacer commit
+         git commit -m "add saludo"
+
 16.-Quita el archivo3.py del area de preparacion
+         git restore --staged alumno3.py
+  
 17.-Restaura el archivo3.py descartando los cambios hechos.Add
+         git add alumno.py
